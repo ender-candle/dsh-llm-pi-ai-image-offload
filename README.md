@@ -102,13 +102,13 @@ that signal never appears.
 ### From GitHub (recommended)
 
 ```
-dsh plugin --profile <profile> add github:<your-user>/dsh-llm-pi-ai-image-offload
+dsh plugin --profile <profile> add github:ender-candle/dsh-llm-pi-ai-image-offload
 ```
 
 Pin a commit for a reproducible install:
 
 ```
-dsh plugin --profile <profile> add github:<your-user>/dsh-llm-pi-ai-image-offload#<sha>
+dsh plugin --profile <profile> add github:ender-candle/dsh-llm-pi-ai-image-offload#<sha>
 ```
 
 ### From a local checkout

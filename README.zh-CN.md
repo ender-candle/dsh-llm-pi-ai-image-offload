@@ -121,13 +121,13 @@ visualTokens = ceil(base64Length(transmitted) / charsPerToken)
 ### 从 GitHub 安装（推荐）
 
 ```
-dsh plugin --profile <profile> add github:<你的用户名>/dsh-llm-pi-ai-image-offload
+dsh plugin --profile <profile> add github:ender-candle/dsh-llm-pi-ai-image-offload
 ```
 
 固定到某个 commit 更稳（可复现）：
 
 ```
-dsh plugin --profile <profile> add github:<你的用户名>/dsh-llm-pi-ai-image-offload#<sha>
+dsh plugin --profile <profile> add github:ender-candle/dsh-llm-pi-ai-image-offload#<sha>
 ```
 
 ### 从本地目录安装
