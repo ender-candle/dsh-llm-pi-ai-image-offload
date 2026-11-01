@@ -1,5 +1,7 @@
 # dsh-llm-pi-ai-image-offload
 
+**中文文档：[README.zh-CN.md](./README.zh-CN.md)**
+
 Restores **request-image token pricing** for adapter routes that declare none
 — in practice every route served by `@deepseek-ai/dsh-llm-pi-ai`.
 
@@ -57,8 +59,8 @@ visualTokens = ceil(base64Length(transmitted) / charsPerToken)
 This is the same unit `spill-policy` compares against `maxInlineTokens`, which is
 what lets it shed an oversized image instead of keeping it inline.
 
-For the reported failure case —a 2048×048 JPEG at 1,266,320 bytes on a route
-with a 1 MiB request budget —that is `base64(1048576) / 4 = 349,526` tokens,
+For the reported failure case — a 2048×2048 JPEG at 1,266,320 bytes on a route
+with a 1 MiB request budget — that is `base64(1048576) / 4 = 349,526` tokens,
 comfortably above the default `maxInlineTokens: 12500`.
 
 ## Config
