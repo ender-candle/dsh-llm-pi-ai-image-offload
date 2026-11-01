@@ -1,0 +1,7 @@
+# dsh-llm-pi-ai-image-offload bundle patch: one host row.
+# The row name resolves from the profile's own node_modules, so this package
+# must be installed there (`dsh plugin --profile desktop add <path>` or a
+# `file:` dependency plus install).
+- insert:
+    - id: llm-pi-ai-image-offload
+      name: dsh-llm-pi-ai-image-offload

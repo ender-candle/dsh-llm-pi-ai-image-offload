@@ -1,0 +1,39 @@
+{
+  "name": "dsh-llm-pi-ai-image-offload",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Restores request-image token pricing for pi-ai routes so dsh-spill-policy can offload oversized base64 images instead of overflowing the context window.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "pi-ai",
+    "image-offload",
+    "context-window",
+    "spill-policy"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "test": "node test/offload.test.mjs"
+  },
+  "license": "MIT"
+}

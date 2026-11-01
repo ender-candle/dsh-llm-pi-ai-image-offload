@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+
+# npm/pnpm artifacts
+*.tgz
+.npmcache/
+
+# logs & OS noise
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/

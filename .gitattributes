@@ -1,0 +1,10 @@
+# Normalize all text files to LF in the repository regardless of platform,
+# so a Windows checkout and a Linux checkout produce identical commits.
+* text=auto eol=lf
+
+# Keep the published artifact byte-stable across platforms.
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.md   text eol=lf
